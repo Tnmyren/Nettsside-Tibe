@@ -1,0 +1,91 @@
+<!doctype html>
+
+    <html>
+    <head>
+    <meta charset="utf-8">
+    <title>Surface Area &amp; Volume</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel="stylesheet" href ="styles.css"/>    
+</head>
+
+    <body>
+    <script>
+    "use strict";
+    var $ = function(id) {
+        return document.getElementById(id);
+    };
+
+    var length = $("length");
+    var width = $("width");
+    var height = $("height");
+    var amountVolume = 0;
+    function calculateVolume(length, width, height) {
+        amountVolume = parseFloat(length) * parseFloat(width) * 
+    parseFloat(height);
+    var volumeRound = amountVolume.toFixed(2);
+        $('volume').value = volumeRound;
+    };
+
+
+    </script>
+    <div id="wrapper">
+    <form>
+    <h1>Surface Area & Volume</h1>
+
+    <p>Length:
+
+    <input type="text" id="length" value="0"/>
+
+    </p>
+    <br />
+    <p>Width:
+
+        <input type="text" id="width" value="0"/>
+
+    </p>
+    <br />
+    <p>Height:
+
+        <input type="text" id="height" value="0"/>
+
+    </p>
+    <br />
+    <p class="change">Surface Area:
+
+        <input type="text" id="area" disabled="disabled" />
+    </p>
+    <br />
+    <p class="volume">Volume:
+
+        <input type="text" id="volume" disabled="disabled" />
+    </p>
+    <br />
+    <input type="button" id="calculate" onClick="calculateVolume(length.value, width.value, height.value)" value="Calculate Volume"/>
+   </form>
+  </div>
+
+
+
+
+
+
+
+<section>
+    <duv>
+        <img src="flipper.jpg" style="width: 20%;"
+        <p>oste kake</p>
+    </duv>
+    <duv></duv>
+    <duv></duv>
+    <duv></duv>
+</section>
+
+
+<v>test test</v>
+
+
+<div class="popup" onclick="myFunction()">Click me!
+    <span class="popuptext" id="myPopup">Popup text...</span>
+  </div>
+</body>
+</html>
